@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>Using Jquery</title>
+	<script type="text/javascript">
+		function getAllCookie() {
+			var now = new Date();
+			document.cookie = "name"+escape(document.myform.customer.value);
+			var allCookie = document.cookie;
+			alert(allCookie);
+		}
+		function onClick() {
+			alert("This is example using js");
+		}
+	</script>
+</head>
+<body>
+	<h1><p> Example using Cookies</p></h1>
+	<form name="myform" action="">
+		Enter Name <input type="text" name="customer" />
+		<input type="button" onclick="getAllCookie()" value="Get Cookies">
+	</form>
+	
+	
+</body>
+</html>
