@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  
+<script>
+class Car {
+  constructor(name,noname) {
+    this.brand = name;
+    this.nobrand=noname;
+  }
+
+  present() {
+    return 'I have a ' + this.brand;
+  }
+  notpresent()
+  {
+   return 'I dont have a ' + this.brand;
+  
+  }
+}
+
+mycar = new Car("Ford","BMW");
+document.writeln(mycar.present());
+document.writeln(mycar.notpresent());
+</script>
+
+</body>
+</html>
